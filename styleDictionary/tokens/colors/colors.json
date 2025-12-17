@@ -1,0 +1,54 @@
+{
+  "color": {
+    "brand": {
+      "primary": {
+        "value": "rgb(40, 42, 60)"
+      },
+      "secondary": {
+        "value": "rgb(121, 73, 136)"
+      },
+      "tertiary": {
+        "value": "rgb(251, 240, 255)"
+      }
+    },
+    "text": {
+      "dark": { "value": "rgb(40, 42, 60)" },
+      "medium": { "value": "rgb(121, 73, 136)" },
+      "light": { "value": "rgb(246, 247, 249)" }
+    },
+    "background": {
+      "dark": { "value": "rgb(40, 42, 60)" },
+      "medium": { "value": "rgb(246, 247, 249)" },
+      "light": { "value": "rgb(255, 255, 255)" }
+    },
+    "border": {
+      "primary": { "value": "rgb(40, 42, 60)" },
+      "secondary": { "value": "rgb(246, 247, 249)" }
+    },
+    "button": {
+      "dark": { "value": "rgb(75, 0, 130)" },
+      "medium": { "value": "rgb(251, 240, 255)" },
+      "light": { "value": "rgb(255, 255, 255)" },
+      "disabled": { "value": "rgb(238, 238, 238)" }
+    },
+    "link": {
+      "dark": { "value": "rgb(75, 0, 130)" },
+      "medium": { "value": "rgb(121, 73, 136)" },
+      "light": { "value": "rgb(255, 255, 255)" }
+    },
+    "semantic": {
+      "success": { "value": "rgb(0, 175, 86)" },
+      "error": { "value": "rgb(190, 0, 64)" },
+      "warning": { "value": "rgb(255, 127, 80)" }
+    },
+    "shadow": {
+      "default": { "value": "rgb(44, 39, 97)" }
+    },
+    "integrations": {
+      "klarna": { "value": "rgb(255, 178, 199)" },
+      "paypal": { "value": "rgb(31, 94, 187)" },
+      "paytrail": { "value": "rgb(229, 46, 134)" },
+      "spotify": { "value": "rgb(29, 208, 94)" }
+    }
+  }
+}

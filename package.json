@@ -1,0 +1,32 @@
+{
+  "name": "rolling-records",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "build-tokens": "sh ./styleDictionary/build-tokens.sh",
+    "style-dictionary-build-colors": "node ./styleDictionary/build-colors.js",
+    "style-dictionary-build-sizes": "node ./styleDictionary/build-sizes.js",
+    "style-dictionary-build-layouts": "node ./styleDictionary/build-layouts.js",
+    "style-dictionary-build-typography": "node ./styleDictionary/build-typography.js"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "nuxt": "^4.2.2",
+    "pinia": "^3.0.4",
+    "vue": "^3.5.25",
+    "vue-router": "^4.6.3"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^7.1.0",
+    "@mdi/font": "^7.4.47",
+    "@pinia/nuxt": "^0.11.3",
+    "style-dictionary": "^5.1.1",
+    "vite-plugin-vuetify": "^2.1.2",
+    "vuetify": "^3.11.3"
+  }
+}

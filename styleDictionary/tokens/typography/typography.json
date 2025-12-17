@@ -1,0 +1,585 @@
+{
+  "asset": {
+    "font": {
+      "link": {
+        "navigation": {
+          "name": {
+            "value": "Nunito Sans, sans-serif",
+            "type": "fontFamily"
+          },
+          "style": {
+            "value": "normal",
+            "type": "fontStyle"
+          },
+          "weight": {
+            "value": "500",
+            "type": "fontWeight"
+          },
+          "ttf": {
+            "value": "styleDictionary/tokens/typography/assets/NunitoSans-VariableFont_YTLC.ttf",
+            "type": "asset"
+          }
+        }
+      },
+      "heading": {
+        "title1": {
+          "name": {
+            "value": "Nunito Sans, sans-serif",
+            "type": "fontFamily"
+          },
+          "style": {
+            "value": "bold",
+            "type": "fontStyle"
+          },
+          "weight": {
+            "value": "700",
+            "type": "fontWeight"
+          },
+          "ttf": {
+            "value": "styleDictionary/tokens/typography/assets/NunitoSans-VariableFont_YTLC.ttf",
+            "type": "asset"
+          }
+        },
+        "title2": {
+          "name": {
+            "value": "Nunito Sans, sans-serif",
+            "type": "fontFamily"
+          },
+          "style": {
+            "value": "bold",
+            "type": "fontStyle"
+          },
+          "weight": {
+            "value": "700",
+            "type": "fontWeight"
+          },
+          "ttf": {
+            "value": "styleDictionary/tokens/typography/assets/NunitoSans-VariableFont_YTLC.ttf",
+            "type": "asset"
+          }
+        },
+        "title3": {
+          "name": {
+            "value": "Nunito Sans, sans-serif",
+            "type": "fontFamily"
+          },
+          "style": {
+            "value": "bold",
+            "type": "fontStyle"
+          },
+          "weight": {
+            "value": "700",
+            "type": "fontWeight"
+          },
+          "ttf": {
+            "value": "styleDictionary/tokens/typography/assets/NunitoSans-VariableFont_YTLC.ttf",
+            "type": "asset"
+          }
+        }
+      }
+    }
+  },
+  "stretch": {
+    "font": {
+      "link": {
+        "navigation": {
+          "$value": {
+            "fontStretch": "100%"
+          },
+          "$type": "fontStretch"
+        }
+      },
+      "heading": {
+        "title1": {
+          "$value": {
+            "fontStretch": "100%"
+          },
+          "$type": "fontStretch"
+        },
+        "title2": {
+          "$value": {
+            "fontStretch": "100%"
+          },
+          "$type": "fontStretch"
+        },
+        "title3": {
+          "$value": {
+            "fontStretch": "100%"
+          },
+          "$type": "fontStretch"
+        }
+      }
+    }
+  },
+  "weight": {
+    "font": {
+      "link": {
+        "navigation": {
+          "$value": {
+            "fontWeight": "500"
+          },
+          "$type": "fontWeight"
+        }
+      },
+      "heading": {
+        "title1": {
+          "$value": {
+            "fontWeight": "700"
+          },
+          "$type": "fontWeight"
+        },
+        "title2": {
+          "$value": {
+            "fontWeight": "700"
+          },
+          "$type": "fontWeight"
+        },
+        "title3": {
+          "$value": {
+            "fontWeight": "700"
+          },
+          "$type": "fontWeight"
+        }
+      }
+    }
+  },
+  "size": {
+    "font": {
+      "link": {
+        "navigation": {
+          "$value": { "fontSize": "1rem" },
+          "$type": "fontSize"
+        }
+      },
+      "heading": {
+        "title1": {
+          "$value": { "fontSize": "2.25rem" },
+          "$type": "fontSize"
+        },
+        "title2": {
+          "$value": { "fontSize": "1.5rem" },
+          "$type": "fontSize"
+        },
+        "title3": {
+          "$value": { "fontSize": "1.25rem" },
+          "$type": "fontSize"
+        }
+      }
+    }
+  },
+  "lineHeight": {
+    "font": {
+      "link": {
+        "navigation": {
+          "$value": {
+            "lineHeight": "1.1875rem"
+          },
+          "$type": "lineHeight"
+        }
+      },
+      "heading": {
+        "title1": {
+          "$value": {
+            "lineHeight": "2.625rem"
+          },
+          "$type": "lineHeight"
+        },
+        "title2": {
+          "$value": {
+            "lineHeight": "1.75rem"
+          },
+          "$type": "lineHeight"
+        },
+        "title3": {
+          "$value": {
+            "lineHeight": "1.5rem"
+          },
+          "$type": "lineHeight"
+        }
+      }
+    }
+  },
+  "typography": {
+    "link": {
+      "navigation": {
+        "$value": {
+          "fontStyle": {
+            "$value": "normal",
+            "$type": "style"
+          },
+          "fontWeight": {
+            "$value": "500",
+            "$type": "fontWeight"
+          },
+          "fontSize": {
+            "$value": "2rem",
+            "$type": "fontSize"
+          },
+          "lineHeight": {
+            "$value": "1.5",
+            "$type": "lineHeight"
+          },
+          "fontFamily": {
+            "$value": "Nunito Sans, sans-serif",
+            "$type": "fontFamily"
+          }
+        },
+        "type": "typography"
+      },
+      "inline": {
+        "$value": {
+          "fontStyle": {
+            "$value": "normal",
+            "$type": "style"
+          },
+          "fontWeight": {
+            "$value": "400",
+            "$type": "fontWeight"
+          },
+          "fontSize": {
+            "$value": "1.5",
+            "$type": "fontSize"
+          },
+          "lineHeight": {
+            "$value": "1.1875rem",
+            "$type": "lineHeight"
+          },
+          "fontFamily": {
+            "$value": "Nunito Sans, sans-serif",
+            "$type": "fontFamily"
+          }
+        },
+        "type": "typography"
+      },
+      "standalone": {
+        "$value": {
+          "fontStyle": {
+            "$value": "normal",
+            "$type": "style"
+          },
+          "fontWeight": {
+            "$value": "500",
+            "$type": "fontWeight"
+          },
+          "fontSize": {
+            "$value": "1rem",
+            "$type": "fontSize"
+          },
+          "lineHeight": {
+            "$value": "1.5",
+            "$type": "lineHeight"
+          },
+          "fontFamily": {
+            "$value": "Nunito Sans, sans-serif",
+            "$type": "fontFamily"
+          }
+        },
+        "type": "typography"
+      },
+      "button": {
+        "$value": {
+          "fontStyle": {
+            "$value": "normal",
+            "$type": "style"
+          },
+          "fontWeight": {
+            "$value": "600",
+            "$type": "fontWeight"
+          },
+          "fontSize": {
+            "$value": "2rem",
+            "$type": "fontSize"
+          },
+          "lineHeight": {
+            "$value": "1",
+            "$type": "lineHeight"
+          },
+          "fontFamily": {
+            "$value": "Nunito Sans, sans-serif",
+            "$type": "fontFamily"
+          }
+        },
+        "type": "typography"
+      }
+    },
+    "heading": {
+      "display1": {
+        "$value": {
+          "fontStyle": {
+            "$value": "normal",
+            "$type": "style"
+          },
+          "fontWeight": {
+            "$value": "700",
+            "$type": "fontWeight"
+          },
+          "fontSize": {
+            "$value": "4rem",
+            "$type": "fontSize"
+          },
+          "lineHeight": {
+            "$value": "1.2",
+            "$type": "lineHeight"
+          },
+          "fontFamily": {
+            "$value": "Nunito Sans, sans-serif",
+            "$type": "fontFamily"
+          }
+        },
+        "type": "typography"
+      },
+      "display2": {
+        "$value": {
+          "fontStyle": {
+            "$value": "normal",
+            "$type": "style"
+          },
+          "fontWeight": {
+            "$value": "700",
+            "$type": "fontWeight"
+          },
+          "fontSize": {
+            "$value": "3.5rem",
+            "$type": "fontSize"
+          },
+          "lineHeight": {
+            "$value": "1.2",
+            "$type": "lineHeight"
+          },
+          "fontFamily": {
+            "$value": "Nunito Sans, sans-serif",
+            "$type": "fontFamily"
+          }
+        },
+        "type": "typography"
+      },
+      "title1": {
+        "$value": {
+          "fontStyle": {
+            "$value": "normal",
+            "$type": "style"
+          },
+          "fontWeight": {
+            "$value": "700",
+            "$type": "fontWeight"
+          },
+          "fontSize": {
+            "$value": "2.5rem",
+            "$type": "fontSize"
+          },
+          "lineHeight": {
+            "$value": "1.25",
+            "$type": "lineHeight"
+          },
+          "fontFamily": {
+            "$value": "Nunito Sans, sans-serif",
+            "$type": "fontFamily"
+          }
+        },
+        "type": "typography"
+      },
+      "title2": {
+        "$value": {
+          "fontStyle": {
+            "$value": "normal",
+            "$type": "style"
+          },
+          "fontWeight": {
+            "$value": "600",
+            "$type": "fontWeight"
+          },
+          "fontSize": {
+            "$value": "2rem",
+            "$type": "fontSize"
+          },
+          "lineHeight": {
+            "$value": "1.25",
+            "$type": "lineHeight"
+          },
+          "fontFamily": {
+            "$value": "Nunito Sans, sans-serif",
+            "$type": "fontFamily"
+          }
+        },
+        "type": "typography"
+      },
+      "title3": {
+        "$value": {
+          "fontStyle": {
+            "$value": "normal",
+            "$type": "style"
+          },
+          "fontWeight": {
+            "$value": "600",
+            "$type": "fontWeight"
+          },
+          "fontSize": {
+            "$value": "1.5rem",
+            "$type": "fontSize"
+          },
+          "lineHeight": {
+            "$value": "1.3",
+            "$type": "lineHeight"
+          },
+          "fontFamily": {
+            "$value": "Nunito Sans, sans-serif",
+            "$type": "fontFamily"
+          }
+        },
+        "type": "typography"
+      },
+      "title4": {
+        "$value": {
+          "fontStyle": {
+            "$value": "normal",
+            "$type": "style"
+          },
+          "fontWeight": {
+            "$value": "600",
+            "$type": "fontWeight"
+          },
+          "fontSize": {
+            "$value": "1.25rem",
+            "$type": "fontSize"
+          },
+          "lineHeight": {
+            "$value": "1.4",
+            "$type": "lineHeight"
+          },
+          "fontFamily": {
+            "$value": "Nunito Sans, sans-serif",
+            "$type": "fontFamily"
+          }
+        },
+        "type": "typography"
+      },
+      "title5": {
+        "$value": {
+          "fontStyle": {
+            "$value": "normal",
+            "$type": "style"
+          },
+          "fontWeight": {
+            "$value": "600",
+            "$type": "fontWeight"
+          },
+          "fontSize": {
+            "$value": "1.125rem",
+            "$type": "fontSize"
+          },
+          "lineHeight": {
+            "$value": "1.4",
+            "$type": "lineHeight"
+          },
+          "fontFamily": {
+            "$value": "Nunito Sans, sans-serif",
+            "$type": "fontFamily"
+          }
+        },
+        "type": "typography"
+      },
+      "title6": {
+        "$value": {
+          "fontStyle": {
+            "$value": "normal",
+            "$type": "style"
+          },
+          "fontWeight": {
+            "$value": "600",
+            "$type": "fontWeight"
+          },
+          "fontSize": {
+            "$value": "1rem",
+            "$type": "fontSize"
+          },
+          "lineHeight": {
+            "$value": "1.5",
+            "$type": "lineHeight"
+          },
+          "fontFamily": {
+            "$value": "Nunito Sans, sans-serif",
+            "$type": "fontFamily"
+          }
+        },
+        "type": "typography"
+      }
+    },
+    "paragraph": {
+      "preamble": {
+        "$value": {
+          "fontStyle": {
+            "$value": "normal",
+            "$type": "style"
+          },
+          "fontWeight": {
+            "$value": "400",
+            "$type": "fontWeight"
+          },
+          "fontSize": {
+            "$value": "1.25rem",
+            "$type": "fontSize"
+          },
+          "lineHeight": {
+            "$value": "1.6",
+            "$type": "lineHeight"
+          },
+          "fontFamily": {
+            "$value": "Nunito Sans, sans-serif",
+            "$type": "fontFamily"
+          }
+        },
+        "type": "typography"
+      },
+      "body": {
+        "$value": {
+          "fontStyle": {
+            "$value": "normal",
+            "$type": "style"
+          },
+          "fontWeight": {
+            "$value": "400",
+            "$type": "fontWeight"
+          },
+          "fontSize": {
+            "$value": "1rem",
+            "$type": "fontSize"
+          },
+          "lineHeight": {
+            "$value": "1.5",
+            "$type": "lineHeight"
+          },
+          "fontFamily": {
+            "$value": "Nunito Sans, sans-serif",
+            "$type": "fontFamily"
+          }
+        },
+        "type": "typography"
+      },
+      "caption": {
+        "$value": {
+          "fontStyle": {
+            "$value": "normal",
+            "$type": "style"
+          },
+          "fontWeight": {
+            "$value": "400",
+            "$type": "fontWeight"
+          },
+          "fontSize": {
+            "$value": "0.75rem",
+            "$type": "fontSize"
+          },
+          "lineHeight": {
+            "$value": "1.5",
+            "$type": "lineHeight"
+          },
+          "fontFamily": {
+            "$value": "Nunito Sans, sans-serif",
+            "$type": "fontFamily"
+          }
+        },
+        "type": "typography"
+      }
+    }
+  }
+}
