@@ -1,12 +1,4 @@
 <script setup lang="ts">
-const runtimeConfig = useRuntimeConfig();
-const apiBaseUri = runtimeConfig.public.apiBaseUri;
-
-const { data } = await useProducts(apiBaseUri);
-
-// save results as genres, uses computed, to update view and data based using
-const products = computed(() => data.value || []);
-console.log("Products on Index Page:", products.value);
 // SEO
 useSeoMeta({
   title: "Rolling Records - Manage Your Vinyl Collection",

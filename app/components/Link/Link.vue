@@ -45,7 +45,11 @@ const linkClasses = clsx("link", {
 }
 .link--navigation {
   font: var(--rr-typography-link-navigation);
+  text-decoration: none;
   display: inline-block;
+}
+.link--navigation:hover {
+  text-decoration: underline;
 }
 .link--dark {
   color: var(--rr-color-link-dark);

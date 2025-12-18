@@ -33,32 +33,18 @@ const cartStore = useCartStore();
     </RouterLink>
     <v-app-bar-title>Rolling Records </v-app-bar-title>
     <v-spacer></v-spacer>
-    <v-btn text><RouterLink to="/products?format=lp">LP:t</RouterLink></v-btn>
-    <v-btn text><RouterLink to="/products?format=cd">CD:t</RouterLink></v-btn>
-    <v-btn text><RouterLink to="/products?format=7">7"</RouterLink></v-btn>
-    <v-btn text><RouterLink to="/products?format=12">12"</RouterLink></v-btn>
-    <v-btn text
-      ><RouterLink to="/products?format=kasetti">Kasetit</RouterLink></v-btn
+    <NavbarLink to="/products?format=lp">LP:t</NavbarLink>
+    <NavbarLink to="/products?format=cd">CD:t</NavbarLink>
+    <NavbarLink to="/products?format=7">7"</NavbarLink>
+    <NavbarLink to="/products?format=12">12"</NavbarLink>
+    <NavbarLink to="/products?format=kasetti">Kasetit</NavbarLink>
+    <NavbarLink to="/products?category=Tarjoukset">Tarjoukset</NavbarLink>
+    <NavbarLink to="/products?category=lahjakortit">Lahjakortit</NavbarLink>
+    <NavbarLink to="/products?category=oheistarvikkeet"
+      >Oheistarvikkeet</NavbarLink
     >
-    <v-btn text
-      ><RouterLink to="/products?category=tarjoukset"
-        >Tarjoukset</RouterLink
-      ></v-btn
-    >
-    <v-btn text
-      ><RouterLink to="/products?category=lahjakortit"
-        >Lahjakortit</RouterLink
-      ></v-btn
-    >
-    <v-btn text
-      ><RouterLink to="/products?category=oheistarvikkeet"
-        >Oheistarvikkeet</RouterLink
-      ></v-btn
-    >
-    <v-btn text
-      ><RouterLink to="/cart"
-        ><v-icon icon="mdi-cart" /> {{ cartStore.items.length }}</RouterLink
-      ></v-btn
+    <NavbarLink to="/cart"
+      ><v-icon icon="mdi-cart" /> {{ cartStore.items.length }}</NavbarLink
     >
     <template v-slot:append>
       <v-app-bar-nav-icon class="d-md-none"></v-app-bar-nav-icon>

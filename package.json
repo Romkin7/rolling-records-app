@@ -1,6 +1,8 @@
 {
   "name": "rolling-records",
   "type": "module",
+  "version": "0.0.1",
+  "description": "A modern e-commerce platform for vinyl records selling world wide. Built with Nuxt 4, Vue 3, Vuetify, and Style Dictionary for design token management",
   "private": true,
   "scripts": {
     "build": "nuxt build",
