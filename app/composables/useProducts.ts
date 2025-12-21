@@ -1,21 +1,27 @@
-export const useProducts = (apiBaseUri: string) => {
+export const useProducts = (
+  apiBaseUri: string,
+  withPath: boolean = false,
+  slug?: string
+) => {
   const route = useRoute();
-  const productId = computed(() => route.params.id);
+  const productSlug = computed(() => route.params.slug || slug || null);
   const query = computed(() => route.query);
   const stringifiedQuery = computed(() => JSON.stringify(query.value));
 
   // define unique key to be used with cache, to eliminate cache collisions
   const uniqueKey = computed(() =>
-    productId.value
-      ? `rr-products-${productId.value}`
+    productSlug.value
+      ? `rr-products-${productSlug.value}`
       : query?.value.name
         ? `rr-products-${query.value.page_size}-${query.value.name}`
         : `rr-products-${query.value.page_size}`
   );
   const url = computed(() =>
-    productId.value
-      ? `${apiBaseUri}/products/${productId.value}`
-      : `${apiBaseUri}/products`
+    withPath && productSlug.value
+      ? `${apiBaseUri}/products/${productSlug.value}`
+      : withPath
+        ? `${apiBaseUri}/products`
+        : apiBaseUri
   );
   return useAsyncData(
     () => uniqueKey.value,
@@ -30,7 +36,7 @@ export const useProducts = (apiBaseUri: string) => {
         if (error.response?.status === 404) {
           throw createError({
             statusCode: 404,
-            statusMessage: `No product found with ID ${productId}`,
+            statusMessage: `No product found with slug ${productSlug.value}`,
           });
         }
 
@@ -62,7 +68,7 @@ export const useProducts = (apiBaseUri: string) => {
           return data;
         }
 
-        const expiryTime = 1000 * 60 * 15; // fifteen minutes
+        const expiryTime = 1000 * 60 * 1; // fifteen minutes
         const isExpired = Date.now() - timestamp > expiryTime;
 
         // if isExpred is true, return undefined.

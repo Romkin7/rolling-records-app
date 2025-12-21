@@ -1,20 +1,28 @@
 <script lang="ts" setup>
-import clsx from 'clsx'
+import clsx from "clsx";
 export interface ButtonProps {
-  variant?: 'elevated' | 'flat' | 'tonal' | 'text' | 'outlined'
-  size?: 'small' | 'medium' | 'large'
-  rounded?: boolean
-  color?: 'primary' | 'secondary' | 'success' | 'error' | 'info' | 'warning' | 'error' | 'paypal'
-  disabled?: boolean
+  variant?: "elevated" | "flat" | "tonal" | "text" | "outlined";
+  size?: "small" | "medium" | "large";
+  rounded?: boolean;
+  color?:
+    | "primary"
+    | "secondary"
+    | "success"
+    | "error"
+    | "info"
+    | "warning"
+    | "error"
+    | "paypal";
+  disabled?: boolean;
 }
-const { size, color, variant, disabled, rounded } = defineProps<ButtonProps>()
-const classes = clsx('rr-button', {
-  'rr-button': true,
-  [size || 'medium']: size,
-  [color || 'primary']: color,
+const { size, color, variant, disabled, rounded } = defineProps<ButtonProps>();
+const classes = clsx("rr-button", {
+  "rr-button": true,
+  [size || "medium"]: size,
+  [color || "primary"]: color,
   pill: rounded,
-  ['disabled']: disabled,
-})
+  ["disabled"]: disabled,
+});
 </script>
 
 <template>
@@ -43,7 +51,7 @@ const classes = clsx('rr-button', {
 
 .rr-button.medium {
   font: var(--rr-typography-body-1);
-  padding: var(--rr-size-dimension-spacing-4) var(--rr-size-dimension-spacing-6);
+  padding: var(--rr-size-dimension-spacing-5) var(--rr-size-dimension-spacing-7);
 }
 
 .rr-button.large {

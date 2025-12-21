@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { ProductResponse } from "@/@types/product";
+import type { ProductsResponse } from "@/@types/product";
 import { useCartStore } from "@/stores/cart";
 
 const cartStore = useCartStore();
@@ -7,10 +7,12 @@ const cartStore = useCartStore();
 const runtimeConfig = useRuntimeConfig();
 const apiBaseUri = runtimeConfig.public.apiBaseUri;
 
-const { data, pending } = await useProducts(apiBaseUri);
+const { data, pending } = await useProducts(apiBaseUri, true);
 
 // save results as genres, uses computed, to update view and data based using
-const products = computed(() => (data.value as ProductResponse).products || []);
+const products = computed(
+  () => (data.value as ProductsResponse).products || []
+);
 </script>
 
 <template>

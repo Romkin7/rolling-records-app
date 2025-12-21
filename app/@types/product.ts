@@ -22,11 +22,16 @@ export interface Product {
   year?: number;
   label?: string;
   format: Format;
+  slug: string;
   category: Category;
   genre: Genre;
   tracklist?: string[];
 }
 
-export interface ProductResponse {
+export interface ProductsResponse {
   products: Product[];
+}
+
+export interface ProductResponse {
+  product: Product;
 }
