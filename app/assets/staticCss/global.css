@@ -9,5 +9,6 @@ body {
 }
 
 main {
-  margin-top: var(--rr-size-dimension-spacing-8);
+  margin-top: calc(var(--rr-size-dimension-spacing-8) * 2);
+  margin-bottom: var(--rr-size-dimension-spacing-8);
 }

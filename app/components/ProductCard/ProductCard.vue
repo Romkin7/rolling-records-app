@@ -22,7 +22,7 @@ const { product } = defineProps<ProductCardProps>();
         :color="'success'"
         :rounded="true"
         :size="'medium'"
-        v-on:click="$emit('click')"
+        @click.stop="$emit('click')"
       >
         <v-icon icon="mdi-cart-plus" />
         {{ product.unit_price }} €

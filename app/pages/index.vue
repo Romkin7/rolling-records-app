@@ -6,15 +6,12 @@ const cartStore = useCartStore();
 
 const runtimeConfig = useRuntimeConfig();
 const apiBaseUri = runtimeConfig.public.apiBaseUri;
-console.log("API Base URI:", apiBaseUri);
 const { data, pending } = await useProducts(apiBaseUri, false);
-console.log("Fetched data for homepage products:", data.value);
 
 // save results as genres, uses computed, to update view and data based using
 const products = computed(
   () => (data.value as ProductsResponse).products || []
 );
-console.log("Products on homepage:", products.value);
 // SEO
 useSeoMeta({
   title: "Rolling Records - Manage Your Vinyl Collection",
@@ -29,7 +26,7 @@ useSeoMeta({
     <v-row>
       <v-col>
         <Heading variant="title1" color="dark" tag="h1"
-          >Rolling Records</Heading
+          >Rolling Records - Viimeisimmät</Heading
         >
       </v-col>
     </v-row>
@@ -52,13 +49,11 @@ useSeoMeta({
         md="4"
         lg="3"
       >
-        <ProductCard
-          :product="product"
-          v-on:click="cartStore.addToCart(product)"
-        />
+        <ProductCard :product="product" @click="cartStore.addToCart(product)" />
       </v-col>
     </v-row>
   </v-container>
+  <p>{{ JSON.stringify(cartStore.items) }}</p>
 </template>
 
 <style scoped>
