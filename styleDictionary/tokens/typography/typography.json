@@ -505,6 +505,31 @@
       }
     },
     "paragraph": {
+      "price": {
+        "$value": {
+          "fontStyle": {
+            "$value": "normal",
+            "$type": "style"
+          },
+          "fontWeight": {
+            "$value": "600",
+            "$type": "fontWeight"
+          },
+          "fontSize": {
+            "$value": "1.5rem",
+            "$type": "fontSize"
+          },
+          "lineHeight": {
+            "$value": "1.6",
+            "$type": "lineHeight"
+          },
+          "fontFamily": {
+            "$value": "Nunito Sans, sans-serif",
+            "$type": "fontFamily"
+          }
+        },
+        "type": "typography"
+      },
       "preamble": {
         "$value": {
           "fontStyle": {

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { Product } from "@/@types/product";
+import { v } from "vue-router/dist/router-CWoNjPRp.mjs";
 
 interface ProductCardProps {
   product: Product;
@@ -15,17 +16,28 @@ const { product } = defineProps<ProductCardProps>();
     >
     <v-card-title>{{ product.title }}</v-card-title>
     <v-card-subtitle>{{ product.name }}</v-card-subtitle>
-    <v-card-text> Hinta: {{ product.unit_price }} € </v-card-text>
+    <v-if v-if="product.discounted_price">
+      <v-card-text>
+        <PriceTag color="dark" textDecoration="line-through">
+          {{ product.unit_price }} €
+        </PriceTag>
+        <PriceTag color="error" textDecoration="normal">
+          Säästä: {{ product.unit_price - product.discounted_price }} €
+        </PriceTag>
+      </v-card-text>
+    </v-if>
     <v-card-actions class="d-flex justify-space-between">
       <v-btn :to="`/products/${product.slug}`" text>Näytä</v-btn>
       <Button
         :color="'success'"
         :rounded="true"
         :size="'medium'"
-        @click.stop="$emit('click')"
+        @click.stop="$emit('add-to-cart')"
       >
         <v-icon icon="mdi-cart-plus" />
-        {{ product.unit_price }} €
+        <PriceTag color="light"
+          >{{ product.discounted_price || product.unit_price }} €</PriceTag
+        >
       </Button>
     </v-card-actions>
   </v-card>

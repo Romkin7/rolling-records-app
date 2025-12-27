@@ -8,7 +8,7 @@ const apiBaseUri = runtimeConfig.public.apiBaseUri;
 const route = useRoute();
 const cartStore = useCartStore();
 const loading = ref(false);
-const { data, error, refresh } = await useProducts(
+const { data, error } = await useProducts(
   apiBaseUri,
   true,
   route.params.slug as string
@@ -96,12 +96,23 @@ const product = computed<Product>(() => {
             }}</v-list-item-subtitle></v-list-item
           >
         </v-list>
+        <v-if v-if="product.discounted_price">
+          <PriceTag color="dark" textDecoration="line-through">
+            {{ product.unit_price }} €
+          </PriceTag>
+          <PriceTag color="error" textDecoration="normal">
+            Säästä: {{ product.unit_price - product.discounted_price }} €
+          </PriceTag>
+        </v-if>
         <Button
           :color="'success'"
           :rounded="true"
           :size="'medium'"
           v-on:click="cartStore.addToCart(product)"
-          ><v-icon icon="mdi-cart-plus" /> {{ product.unit_price }} €</Button
+          ><v-icon icon="mdi-cart-plus" />
+          <PriceTag color="light"
+            >{{ product.discounted_price || product.unit_price }} €</PriceTag
+          ></Button
         >
       </v-col>
     </v-row>

@@ -12,3 +12,8 @@ main {
   margin-top: calc(var(--rr-size-dimension-spacing-8) * 2);
   margin-bottom: var(--rr-size-dimension-spacing-8);
 }
+
+a {
+  text-decoration: none;
+  color: transparent;
+}

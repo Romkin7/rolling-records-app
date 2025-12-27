@@ -10,11 +10,13 @@ export const useProducts = (
 
   // define unique key to be used with cache, to eliminate cache collisions
   const uniqueKey = computed(() =>
-    productSlug.value
-      ? `rr-products-${productSlug.value}`
-      : query?.value.name
-        ? `rr-products-${query.value.page_size}-${query.value.name}`
-        : `rr-products-${query.value.page_size}`
+    !withPath
+      ? `rr-products-index-page`
+      : productSlug.value
+        ? `rr-products-${productSlug.value}`
+        : query?.value.name
+          ? `rr-products-${query.value.page_size}-${query.value.name}`
+          : `rr-products-${query.value.page_size}`
   );
   const url = computed(() =>
     withPath && productSlug.value

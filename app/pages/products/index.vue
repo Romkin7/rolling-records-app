@@ -41,10 +41,12 @@ const products = computed(
         md="4"
         lg="3"
       >
-        <ProductCard
-          :product="product"
-          v-on:click="cartStore.addToCart(product)"
-        />
+        <NuxtLink :to="`/products/${product.slug}`">
+          <ProductCard
+            :product="product"
+            v-on:add-to-cart="cartStore.addToCart(product)"
+          />
+        </NuxtLink>
       </v-col>
     </v-row>
   </v-container>

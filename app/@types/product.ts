@@ -19,6 +19,7 @@ export interface Product {
   description?: string;
   cover: string;
   unit_price: number;
+  discounted_price?: number;
   year?: number;
   label?: string;
   format: Format;

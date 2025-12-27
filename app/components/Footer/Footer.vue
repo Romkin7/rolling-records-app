@@ -39,7 +39,7 @@ const paymentMethods: PaymentMethod[] = [
             Rolling Records
             <Link color="dark" variant="inline" to="/customer-service"
               >Asiakaspalvelu</Link
-            >
+            >.
           </Paragraph>
           <Paragraph variant="body" color="dark">
             Käyttämällä sivustoamme, hyväksytte meidän verkkokaupan
