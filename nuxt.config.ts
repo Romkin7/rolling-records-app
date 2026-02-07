@@ -2,7 +2,14 @@
 import vuetify, { transformAssetUrls } from "vite-plugin-vuetify";
 
 export default defineNuxtConfig({
-  modules: ["@pinia/nuxt"],
+  modules: ["@pinia/nuxt", "@nuxtjs/i18n", "@nuxtjs/i18n"],
+  i18n: {
+    locales: [
+      { code: "en", language: "en-US" },
+      { code: "fi", language: "fi-FI" },
+    ],
+    defaultLocale: "fi",
+  },
   pinia: {
     /**
      * Automatically add stores dirs to the auto imports. This is the same as
