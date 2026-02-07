@@ -22,7 +22,7 @@ const { product } = defineProps<ProductCardProps>();
           {{ product.unit_price }} €
         </PriceTag>
         <PriceTag color="error" textDecoration="normal">
-          Säästä: {{ product.unit_price - product.discounted_price }} €
+          {{ t }} {{ product.unit_price - product.discounted_price }} €
         </PriceTag>
       </v-card-text>
     </v-if>
